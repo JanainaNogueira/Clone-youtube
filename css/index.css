@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+}
+a, button{
+    cursor: pointer;
+}
+/*header*/
+header{
+    display: flex;
+    background-color: #000000;
+    height: 9%;
+    align-items: center;
+    padding-left: 1%;
+}
+.div-header:nth-child(1){
+    display: flex;
+    align-items: center;
+    width: 10%;
+    height: 100%;
+}
+.icon-menu{
+    width: 15%;
+    height: 25%;
+    cursor: pointer;
+    margin:0 20% 0 10%;
+}
+.logo-youtube{
+    width: 70%;
+    height: 40%;
+}
+.div-header:nth-child(2){
+    display: flex;
+    width: 75%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.pesquisa{
+    border: 1px solid  #222222;
+    background-color: #121212;
+    color: #ffffff;
+    width: 57%;
+    height: 70%;
+    border-radius: 20px 0px 0px 20px;
+    font: 'Roboto';
+    padding-left:1% ;
+    font-size:medium;
+    background: url(../img/keyboard.png) no-repeat;
+    background-position: 98%;
+    background-size: 3%;
+}
+.button-pesquisar{
+    background: url(../img/loupe.png) no-repeat;
+    background-size: 25%;
+    background-position: center;
+    width: 6%;
+    height: 70%;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    background-color: #222222;
+}
+.microfone{
+    margin-left:1%;
+    width: 4%;
+    height: 70%;
+    border-radius: 30px;
+    border:none;
+    background: url(../img/mic.png) no-repeat;
+    background-color: #30303070;
+    background-position: center;
+    background-size: 45%;
+}
+
+.div-header:nth-child(3){
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 15%;
+    height: 100%;
+}
+.gravar, .notificacao{
+    width: 20%;
+    height: 70%;
+    background-color: none;
+    border: none;
+    margin: 0 2% 0 2%;
+}
+.gravar{
+    background: url(../img/video-camera.png) no-repeat;
+    background-size: 50%;
+    background-position:center;
+}
+.notificacao{
+    background: url(../img/bell.png) no-repeat;
+    background-size: 40%;
+    background-position:center;
+}
+.icon-perfil{
+    width: 15%;
+    height: 50%;
+    margin: 0 15% 0 5%;
+}
+/*main*/
+.box{
+    display: flex;
+}
+.title{
+    margin: 1% 0 2% 0;
+    font-size:larger;
+}
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 10%;
+}
+.info div{
+    display: flex;
+    width: 27%;
+    height: 100%;
+    align-items: center;
+}
+.icon-canal{
+    width: 20%;
+    height: 80%;
+}
+.info-canal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    height: 100%;
+    margin-left: 5%;
+}
+.info-canal p:nth-child(1)::after{
+    content: url(../img/correct.png);
+    margin-left: 1%;
+}
+.info-canal p:nth-child(1){
+    font-weight: 600;
+    font-stretch:ultra-expanded;
+}
+.verificado{
+    width: 100%;
+    height: 100%;
+}
+.inscrever{
+    width: 15%;
+    height: 70%;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 90%;
+    font-weight: 600;
+    border: none;
+    border-radius: 20px;
+}
+.classificar{
+    display: flex;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+}
+.like{
+    display: flex;
+    width: 55%;
+    height: 70%;
+    background: url(../img/like.png) no-repeat;
+    background-color: #3f3f3fa4; 
+    background-size: 18%;
+    background-position-x: 10%;
+    background-position-y:40%;
+    border-radius: 20px 0 0 20px;
+    border: 1px solid #ffffff;
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+    align-items: center;
+    justify-content:center;
+}
+.deslike{
+    width: 35%;
+    height: 70%;
+    background: url(../img/deslike.png) no-repeat;
+    background-color: #3f3f3fa4;
+    background-size: 35%;
+    background-position: center; 
+    border-radius: 0 20px 20px 0;
+    border: none;
+}
+.compartilhar{
+    width: 20%;
+    height: 70%;
+    border-radius: 20px;
+    border: none;
+    background: url(../img/share.png) no-repeat;
+    background-color: #3f3f3fa4;
+    background-size: 15%;
+    background-position: 7%;
+    font-size: 90%;
+}
+.opcoes{
+    width: 5%;
+    height: 70%;
+    background: url(../img/option.png) no-repeat;
+    background-color: #3f3f3fa4;
+    background-size: 50%;
+    border: none;
+    border-radius: 25px;
+    background-position: center;
+}
+
+.contain{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 60%;
+    margin-top: 2%;
+}
+/*descrição*/
+.descricao{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 88%;
+    height: 40%;
+    margin-top:2%;
+    padding: 2%;
+    border-radius: 10px;
+    background-color: #272727;
+    font-size: 95%;
+}
+a{
+    color: #309AFF;
+    text-decoration: none;
+}
+.descricao p:nth-child(17){
+    font-weight: bold;
+}
+/*categorias*/
+.categoria{
+    display: flex;
+    width: 92%;
+    height: 15%;
+    margin: 2% 0;
+    justify-content: space-between;
+}
+.categoria_box{
+    display: flex;
+    height: 100%;
+    width: 49%;
+    border-radius: 10px;
+    background-color: #272727;
+}
+.categoria div img{
+    width: 30%;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+}
+.desc-categoria{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 5%;
+    width: 70%;
+}
+.desc-categoria p:nth-child(n+2), .ver-mais{
+    color: #AAAA9E;
+    font-size: 80%;
+}
+.ver-mais::after{
+    content: url(../img/mais.png);
+}
+.info-comentarios{
+    display: flex;
+    width: 92%;
+}
+.info-comentarios button{
+    border: none;
+    width: 18%;
+    height:100%;
+    text-align: center;
+    background: url(../img/filtro.png) no-repeat;
+    background-size: 14%;
+    background-position-x:9%;
+    margin-left: 2%;
+    cursor: pointer;
+}
+.comentar{
+    display: flex;
+    width: 95%;
+    height: 100%;
+}
+.comentario{
+    width: 92%;
+    height: 20%;
+    color: #ffffff;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    margin-top: 2%;
+}
+.comentarios{
+    width: 92%;
+}
+.icon-perfil-comentario{
+    width: 20%;
+    height: 10%;
+}
+/*aside*/
+.aside{
+    width: 40%;
+    margin-top: 2%;
+    padding-left: 2%;
+}
+.videos{
+    display: flex;
+    width: 90%;
+    height:7%;
+    margin-bottom: 3%;
+}
+.videos img{
+    width: 36%;
+    height: 100%;
+    border-radius: 10px;
+    margin-right: 3%;
+}
+.info-video-aside{
+    display: flex;
+    width:70%;
+    flex-direction: column;
+    justify-content: center;
+}
+.info-video-aside p:nth-child(2){
+    margin-top: 2%;
+}
+.info-video-aside p:nth-child(2)::after{
+    content: url(../img/correct.png);
+    width: 15%;
+    height: 5px;
+}
+.info-video-aside p:nth-child(n+2){
+    color: #6b6a6a;
+}
